@@ -1,0 +1,15 @@
+name: anyoldfile
+
+on:
+  push:
+    paths:
+      - ".github/workflows/anyoldfile.yml"
+      - "anyoldfile/**"
+  workflow_dispatch: # manual
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+  
