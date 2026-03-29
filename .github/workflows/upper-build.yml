@@ -22,6 +22,7 @@ jobs:
             go-version-file: ./upper/go.mod
             cached-dependency-path: ./upper/go.sum
         - run: go mod download
+          working-directory: upper
         - run: go version
         - run: |
             ls
